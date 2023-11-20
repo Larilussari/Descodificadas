@@ -1,0 +1,280 @@
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
+
+  body {
+    background-color: #f6edf2; /* cor de fundo do site */
+}
+
+.img_header{
+    align-items:center;
+    margin-left: 1px;
+    background-size: cover;
+    outline-width: 2px;
+    outline-style:dotted;
+    outline-color: rgb(0, 0, 0);
+    padding-right: 1130px;
+    padding-bottom: 200px;
+}
+
+  div{
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    
+}
+
+nav {
+    font-family: 'quicksand';
+    text-align: center;
+}
+
+h1 {
+    font-family: 'quicksand';
+    text-align: center;
+}
+
+h2{
+    font-family: 'quicksand';
+    text-align: center;
+}
+p{
+    font-family:'quicksand';
+    text-align: center;
+}
+
+.batom {
+    align-items: center;
+    text-align: center;
+    outline-width: 10px;
+     
+}
+
+.batom img{
+    margin-top: 10px;
+}
+
+.btn_comprar{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.pulseiras {
+    align-items: center;
+    text-align: center;
+    outline-width: 10px;
+   
+}
+
+.pulseiras img{
+    margin-top: 10px;
+}
+.po_maquiagem {
+    align-items: center;
+    text-align: center;
+    outline-width: 10px;
+ 
+}
+.po_maquiagem img{
+    margin-top: 10px;
+}
+.brincos{
+    align-items: center;
+    text-align: center;
+    outline-width: 10px;
+}
+
+.brincos img{
+    margin-top: 10px;
+}
+
+.oculos{
+    margin-top: 10px;
+}
+
+.oculos img{
+    margin-top: 20px;
+}
+
+
+.video{
+    margin-left: 400px;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 360px;
+    padding-bottom: 114px;  
+}
+
+.creme_corporal{
+    margin-top: 40px;
+}
+
+#map{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    margin-left:340px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6edf2;
+}
+
+#botao_enviar {
+    width: 50%;
+    margin-left: 20px;
+}
+ 
+textarea{
+    margin-left: 0px;
+    width: 500px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+label{
+    font-family: 'quicksand';
+    text-align: center;
+    margin-left: 100px;
+}
+
+#menu{
+    position: fixed;
+            top: 0;
+            left: -100px;
+            width: 100%;
+            height: 95px;
+            background-color: #000000;
+            color: rgb(244, 244, 244)
+            padding 0px;
+            font-size: 22px ;
+            text-align: center;                
+            
+}
+
+#menu img {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    margin-right: 1400px; 
+    height: 150px;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #fff; /* Define a cor do texto como branco */
+}
+
+li{
+    display: inline;
+            margin-right: 40px; /* Espaço entre os itens do menu */
+}
+
+#desconto{
+ position:initial;
+ margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #954747;
+    color: rgb(244, 244, 244);
+    font-size: 15px ;               
+    
+}
+
+#forms_desconto{
+    margin-left: 390px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#text_desc_menu{
+    position:initial;
+    margin: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: #f6edf2;
+    color: rgb(0, 0, 0);
+    font-size: 22px ;  
+       
+}
+
+#final{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f6edf2;
+    font-size: 18px ;  
+}
+
+hr {
+    border: none; /* Remove a borda padrão */
+    width: 100%;
+    margin: 0;
+
+    border-top: 1px solid #000; /* Adiciona uma linha horizontal de 1 pixel sólida preta */
+}
+
+#form_cadastro {
+    margin-top: 30px;
+    margin-left: 350px;
+    width: 400px;
+    margin-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-top: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+#form_cadastro p{
+    text-align: left;
+}
+
+#form_cadastro input[type]{
+    margin-bottom: 10px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#receber_promocoes {
+    font-family: 'quicksand';
+    text-align: center;
+    text-decoration:#000;
+}
+
+#btn_cadastrar {
+    margin-top: 20px;
+    margin-left: 650px;
+}
+
+#barrabusca input[type="text"]{
+    align-items: center;
+    margin-left: 400px;
+    margin-bottom: 20px;
+    width: 500px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#email_contato{
+    margin-left: 600px;
+    font-size: 23px;
+    color: blue;
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
+#botao_enviar{
+  width: 100px;
+  margin-left: 46%;
+  
+}
+
