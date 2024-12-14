@@ -2,155 +2,294 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!-- META TAGS -->
+    <meta name="description" content="L Beauty - Sua loja de cosméticos online. Encontre maquiagens, skincare, acessórios e muito mais.">
+    <meta name="keywords" content="cosméticos, maquiagens, skincare, acessórios, beleza, loja online">
+    <meta name="author" content="Larissa Castro Lussari Caires">
     <title>L Beauty | Sua loja de cosméticos</title>
-    <link rel="stylesheet" type="text/css" href ="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="imagens/LOGO_V2_SemFundo.ico" type="image/x-icon">
-    <h1>L Beauty</h1>
-    <nav>
-        <div id="menu">
-       <ul>
-        <img src="imagens/LOGO_V2_SemFundo.ico">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="maquiagens.html">Maquiagens</a> </li>
-        <li><a href="skincare.html">SkinCare</a> </li>
-        <li><a href="acessorios.html">Acessorios</a> </li>
-        <li><a href="cadastrar.html">Cadastre-se</a> </li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="contato.html">Contato</a> </li>
-        </ul>
-        </div>
-    </nav>
-    <br>
-    <form action ="resultado-busca.html" method="get" id="barrabusca">
-        <input type="text" name ='busca' placeholder="O que você procura?">
-            <input type = "submit" value="Pesquisar">
-    </form>
-    <div class="img_header">
-    <img src="imagens/LB_novav.png" width="1330px">
-</div>
+    
 </head>
 <body>
-<div id ='desconto'>
-    <p><h1> Garanta 10% de desconto na primeira compra utilizando o cupom:PRIMEIRACOMPRA10</h1></p>
-   <p><a>Cadastre-se para receber atualizações e promoções diárias</a></p>
-  
-    <form  method="post" id="forms_desconto">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <input type="submit" value="Cadastrar">
-    </form>
+    <header>
+        <nav>
+            <div id="menu">
+                <ul>
+                    <li><img class="nav-logo" src="imagens/LOGO_V2_SemFundo.ico" alt="Logo"></li>
+                    <li><a href="index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="maquiagens.html">Maquiagens</a>
+                        <div class="dropdown-content">
+                            <a href="base.html">Base</a>
+                            <a href="po.html">Pó para Rosto</a>
+                            <a href="delineador.html">Delineador</a>
+                            <a href="rimel.html">Rímel</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="skincare.html">SkinCare</a>
+                        <div class="dropdown-content">
+                            <a href="hidratante.html">Hidratante</a>
+                            <a href="serum.html">Sérum</a>
+                            <a href="protetor.html">Protetor Solar</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="acessorios.html">Acessórios</a>
+                        <div class="dropdown-content">
+                            <a href="pinceis.html">Pincéis</a>
+                            <a href="esponjas.html">Esponjas</a>
+                            <a href="necessaires.html">Necessaires</a>
+                        </div>
+                    </li>
+                    <li><a href="cadastrar.html">Cadastre-se</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-</div>
+    <main>
+        <section id="search">
+            <form action="resultado-busca.html" method="get" id="barrabusca">
+                <input type="text" name="busca" placeholder="O que você procura?" class="search-input">
+                <input type="submit" value="Pesquisar" class="search-button">
+            </form>
+        </section>
 
-<br>
-<br>
-<br>
-<br>
+        <section class="img_header">
+            <img class="responsive-header-image" src="imagens/LB_novav.png" alt="Header Image">
+        </section>
 
-<div id ="text_desc_menu">
-<p>Produtos com até 10% de desconto e que você encontra somente aqui</p>
-</div>
-<div class="batom">
-    <img src="imagens/maquiagem_batom.jpg" width="180px">
-    <p>Batom Mary</p>
-    <p class="preco">R$ 10,00</p>
-    <button class="btn_comprar">Comprar</button>
-</div>
+        <section id="desconto">
+            <h1>Garanta 10% de desconto na primeira compra utilizando o cupom: PRIMEIRACOMPRA10</h1>
+            <p>Cadastre-se para receber atualizações e promoções diárias</p>
+            <form method="post" id="forms_desconto">
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required class="desconto-input">
+                    </div>
+                    <div class="input-item">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required class="desconto-input">
+                    </div>
+                </div>
+                <input type="submit" value="Cadastrar" class="desconto-button">
+            </form>
+        </section>
 
-<div class="po_maquiagem">
-    <img src="imagens/Eudora-Glam-Skin-Invisible-Po-Compacto-Invisivel-E47840_aberto.webp" width="175px">
-    <p>Pó Vult</p>
-    <p class="preco">De <del>R$25,99</del> por R$ 9,95</p>
-    <button class="btn_comprar">Comprar</button>
-</div>
+        <section id="principais_produtos">
+            <h2>Principais produtos</h2>
+            <div class="catalogo">
+                <article class="produto">
+                    <div class="carrousel">
+                        <img src="imagens/maquiagem_batom.jpg" alt="Batom Mary">
+                        <img src="imagens/batom_matte.jpg" alt="Batom Mary 2">
+                        <button class="setaesquerda" onclick="slides(-1, 0)">&#10094;</button>
+                        <button class="setadireita" onclick="slides(1, 0)">&#10095;</button>
+                    </div>
+                    <h3>Batom Mary</h3>
+                    <p class="preco">R$ 10,00</p>
+                    <button class="btn_comprar">Comprar</button>
+                </article>
+                <article class="produto">
+                    <div class="carrousel">
+                        <img src="imagens/po_marrom.jpg" alt="Pó Vult">
+                        <img src="imagens/po_eudora.webp" alt="Pó Vult 2">
+                        <button class="setaesquerda" onclick="slides(-1, 1)">&#10094;</button>
+                        <button class="setadireita" onclick="slides(1, 1)">&#10095;</button>
+                    </div>
+                    <h3>Pó Vult</h3>
+                    <p class="preco">De <del>R$25,99</del> por R$ 9,95</p>
+                    <button class="btn_comprar">Comprar</button>
+                </article>
+                <article class="produto">
+                    <div class="carrousel">
+                        <img src="imagens/pulseiras.jpg" alt="pulseiras 1">
+                        <img src="imagens/pulseira_perola.jpg" alt="pulseiras 1">
+                        <button class="setaesquerda" onclick="slides(-1, 2)">&#10094;</button>
+                        <button class="setadireita" onclick="slides(1, 2)">&#10095;</button>
+                    </div>
+                    <h3>Pulseira de prata</h3>
+                    <p class="preco">De <del>R$ 55,90</del> por R$ 25,90</p>
+                    <button class="btn_comprar">Comprar</button>
+                </article>
+                <article class="produto">
+                    <div class="carrousel">
+                        <img src="imagens/conj_brincos.jpeg" alt="Brinco Argola Ouro">
+                        <img src="imagens/brinco_argola_madreperola.jpg" alt="Brinco Argola Ouro 2">
+                        <button class="setaesquerda" onclick="slides(-1, 3)">&#10094;</button>
+                        <button class="setadireita" onclick="slides(1, 3)">&#10095;</button>
+                    </div>
+                    <h3>Brincos Ouro</h3>
+                    <p class="preco">De <del>R$ 69,99</del> por R$ 39,99</p>
+                    <button class="btn_comprar">Comprar</button>
+                </article>
+                <article class="produto">
+                    <div class="carrousel">
+                        <img src="imagens/safine_com_br-oculos-de-sol-feminino-quadrado-azul-duda.jpg" alt="Óculos de Sol Feminino">
+                        <img src="imagens/oculos feminino.jpg" alt="Óculos de Sol Feminino 2">
+                        <button class="setaesquerda" onclick="slides(-1, 4)">&#10094;</button>
+                        <button class="setadireita" onclick="slides(1, 4)">&#10095;</button>
+                    </div>
+                    <h3>Óculos de Sol Feminino</h3>
+                    <p class="preco">De <del>R$ 69,99</del> por R$ 39,99</p>
+                    <button class="btn_comprar">Comprar</button>
+                </article>
+                <article class="produto">
+                    <div class="carrousel">
+                        <img src="imagens/oculos_masc.jpeg" alt="Óculos de Sol Masculino">
+                        <img src="imagens/oculos_masc2.jpg" alt="Óculos de Sol Masculino 2">
+                        <button class="setaesquerda" onclick="slides(-1, 5)">&#10094;</button>
+                        <button class="setadireita" onclick="slides(1, 5)">&#10095;</button>
+                    </div>
+                    <h3>Óculos de Sol Masculino</h3>
+                    <p class="preco">De <del>R$ 69,99</del> por R$ 39,99</p>
+                    <button class="btn_comprar">Comprar</button>
+                </article>
+                <article class="produto">
+                    <div class="carrousel">
+                        <img src="imagens/kit maquiagem.jpg" alt="Kit L Beauty">
+                        <img src="imagens/Kit_sombra.jpg" alt="Kit L Beauty 2">
+                        <button class="setaesquerda" onclick="slides(-1, 6)">&#10094;</button>
+                        <button class="setadireita" onclick="slides(1, 6)">&#10095;</button>
+                    </div>
+                    <h3>Kit L Beauty</h3>
+                    <p class="preco">De <del>R$ 150,99</del> por R$ 99,99</p>
+                    <button class="btn_comprar">Comprar</button>
+                </article>
+                <article class="produto">
+                    <div class="carrousel">
+                        <img src="imagens/creme_corporal_vic.jpg" alt="Creme corporal Victoria Secret's">
+                        <img src="imagens/creme victoria vanilha.jpg" alt="Creme corporal Victoria Secret's 2">
+                        <button class="setaesquerda" onclick="slides(-1, 7)">&#10094;</button>
+                        <button class="setadireita" onclick="slides(1, 7)">&#10095;</button>
+                    </div>
+                    <h3>Creme corporal Victoria Secret's</h3>
+                    <p class="preco">De <del>R$ 90,99</del> por R$ 70,85</p>
+                    <button class="btn_comprar">Comprar</button>
+                </article>
+                <article class="produto">
+                    <div class="carrousel">
+                        <img src="imagens/creme_multioleo.jpg" alt="Creme corporal Victoria Secret's">
+                        <img src="imagens/creme_nivea_corpo.jpg" alt="Creme corporal Victoria Secret's 2">
+                        <button class="setaesquerda" onclick="slides(-1, 8)">&#10094;</button>
+                        <button class="setadireita" onclick="slides(1, 8)">&#10095;</button>
+                    </div>
+                    <h3>Cremes diversos</h3>
+                    <p class="preco">De <del>R$ 153,99</del> por R$ 80,99</p>
+                    <button class="btn_comprar">Comprar</button>
+                </article>
+                <article class="produto">
+                    <div class="carrousel">
+                        <img src="imagens/pulseira_pingentes.jpg" alt="Pulseira 1">
+                        <img src="imagens/pulseiras_color.jpg" alt="Pulseira">
+                        <button class="setaesquerda" onclick="slides(-1, 9)">&#10094;</button>
+                        <button class="setadireita" onclick="slides(1, 9)">&#10095;</button>
+                    </div>
+                    <h3>Pulseira Pingente</h3>
+                    <p class="preco">De <del>R$ 30,99</del> por R$ 15,99</p>
+                    <button class="btn_comprar">Comprar</button>
+                </article>
+                <article class="produto">
+                    <div class="carrousel">
+                        <img src="imagens/pinceis_po.jpg" alt="Pincel pó">
+                        <img src="imagens/po_cores.jpg" alt="Kit pincel">
+                        <button class="setaesquerda" onclick="slides(-1, 10)">&#10094;</button>
+                        <button class="setadireita" onclick="slides(1, 10)">&#10095;</button>
+                    </div>
+                    <h3>Pincéis de maquiagem</h3>
+                    <p class="preco">De <del>R$ 50,99</del> por R$ 40,99</p>
+                    <button class="btn_comprar">Comprar</button>
+                </article>
+                <article class="produto">
+                    <div class="carrousel">
+                        <img src="imagens/delineador.jpg" alt="Creme corporal Victoria Secret's">
+                        <img src="" alt="Creme corporal Victoria Secret's 2">
+                        <button class="setaesquerda" onclick="slides(-1, 11)">&#10094;</button>
+                        <button class="setadireita" onclick="slides(1, 11)">&#10095;</button>
+                    </div>
+                    <h3>Delineador</h3>
+                    <p class="preco">De <del>R$ 110,99</del> por R$ 80,99</p>
+                    <button class="btn_comprar">Comprar</button>
+                </article>
+            </div>
+        </section>
 
-<div class ="pulseiras">
-    <img src="imagens/pulseiras.jpg" width="180px">
-    <p>Pulseira de prata</p>
-    <p class ="preco">De <del>R$ 55,90</del> por R$ 25,90</p>
-    <button class="btn_comprar">Comprar</button>
-</div>
+        <div class="side-by-side">
+            <section id="curiosidades">
+                <h2>Curiosidades</h2>
+                <p>Aprenda a identificar o tom da sua base e não erre na hora da compra</p>
+                <div class="video">
+                    <iframe width="560" height="320" src="https://www.youtube.com/embed/ft4EwofdrBI?si=egMUEKvetM3Q_WUf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
 
-<div class="brincos">
-    <img src="imagens/brinco-argola-madreperola-cristais.jpg" height="180px">
-    <p>Brinco Argola Ouro</p>
-    <p class="preco">De <del>R$ 69,99</del> por R$ 39,99</p>
-    <button class="btn_comprar">Comprar</button>
-</div>
+            <section id="localizacao">
+                <h2>Nossa localização</h2>
+                <p>Estamos Localizados em São Paulo, marque uma visita para conhecer nossos serviços!</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14632.730258880612!2d-46.660583949999996!3d-23.525935250000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce580f7c039a63%3A0xcf365b1a0b3158be!2sBarra%20Funda%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1696095382278!5m2!1spt-BR!2sbr" width="300px" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+            </section>
+        </div>
 
-<div class="oculos">
-    <img src="imagens/safine_com_br-oculos-de-sol-feminino-quadrado-azul-duda.jpg" height="180px">
-    <p>Óculos de Sol Feminino </p>
-    <p class="preco">De <del>R$ 69,99</del> por R$ 39,99</p>
-    <button class="btn_comprar">Comprar</button>
-</div>
+        <section id="feedback">
+            <h2>Feedback</h2>
+            <form>
+                <p>O quanto você está satisfeito com nosso site?</p>
+                <p>Pouco <input type="range" name="satisfacao" min="0" max="10"> muito</p>
+                <p>Comentários<br>
+                    <textarea></textarea><br>
+                </p>
+                <input type="submit" value="Enviar Resposta" id='botao_enviar' onclick="mostrarMensagem()">
+            </form>
+        </section>
+    </main>
 
-<div class ="oculos2">
-    <img src="imagens/safine_com_br-oculos-de-sol-masculino-quadrado-caramelo-apolo.jpeg" height="180px">
-    <p>Óculos de Sol Masculino </p>
-    <p class="preco">De <del>R$ 69,99</del> por R$ 39,99</p>
-    <button class="btn_comprar">Comprar</button>
-</div>
+    <script>
+        function mostrarMensagem() {
+            alert("Obrigada pelo seu feedback, é muito importante para sempre melhorarmos :)");
+        }
 
-<div class ="kit_beleza">
-    <img src="imagens/479fc2e6-a3e0-4fd2-92fd-c0c368b966b2-kit-beleza-na-web-maquiagem-basica-4-produtos.webp" height="180px">
-    <p>Kit L Beauty</p>
-    <p class="preco">De <del>R$ 150,99</del> por R$ 99,99</p>
-    <button class="btn_comprar">Comprar</button>
-</div>
+        let slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+        let slideId = ["carrousel1", "carrousel2", "carrousel3", "carrousel4", "carrousel5", "carrousel6", "carrousel7", "carrousel8", "carrousel9", "carrousel10", "carrousel11", "carrousel12"];
+        passaSeta(1, 0);
+        passaSeta(1, 1);
+        passaSeta(1, 2);
+        passaSeta(1, 3);
+        passaSeta(1, 4);
+        passaSeta(1, 5);
+        passaSeta(1, 6);
+        passaSeta(1, 7);
+        passaSeta(1, 8);
+        passaSeta(1, 9);
+        passaSeta(1, 10);
+        passaSeta(1, 11);
 
-<div class ="creme_corporal">
-    <img src="imagens/creme_corporal_vic.jpg" height="180px">
-    <p>Creme corporal Victoria Secret's </p>
-    <p class="preco">De <del>R$ 150,99</del> por R$ 99,99</p>
-    <button class="btn_comprar">Comprar</button>
-</div>
+        function slides(n, no) {
+            passaSeta(slideIndex[no] += n, no);
+        }
 
-<br>
-<br>
-<br>
-<br>
+        function passaSeta(n, no) {
+            let i;
+            let x = document.getElementsByClassName("carrousel")[no].getElementsByTagName("img");
+            if (n > x.length) {slideIndex[no] = 1}
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  
+        }
+    </script>
 
-
-
-<h2>Curiosidades</h2>
-<p>Aprenda a identificar o tom da sua base e não erre na hora da compra</p>
-<div class="video">
-<iframe width="560" height="320" src="https://www.youtube.com/embed/ft4EwofdrBI?si=egMUEKvetM3Q_WUf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-
-<H2>Nossa localização</H2>
-<p> Estamos Localizados em São Paulo, marque uma visita para conhecer nossos serviços!</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14632.730258880612!2d-46.660583949999996!3d-23.525935250000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce580f7c039a63%3A0xcf365b1a0b3158be!2sBarra%20Funda%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1696095382278!5m2!1spt-BR!2sbr" width="300px" height="400px" style="border:20;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map" >
-</iframe> 
-
-
-<form>
-    <h1>Feedback</h1>
-    <p>O quanto você está satisfeito com nosso site?</p>
-   <p>Pouco <input type="range" name="satisfacao" min="0" max="10"> muito</p>
-    <p>Comentários<br>
-         <textarea></textarea><br></p>
-    <input type="submit" name="Enviar" placeholder="Enviar Resposta" id ='botao_enviar' onclick="mostrarMensagem()">
-</form>
-
-<script>
-    function mostrarMensagem() {
-        alert("Obrigada pelo seu feedback, é muito importante para sempre melhorarmos :)");
-    }
-</script>
+    <footer>
+        <div id="final">
+            <hr>
+            <p>Criado por Larissa Castro Lussari Caires para o Programa Descodificadas</p>
+        </div>
+    </footer>
 </body>
-<br>
-
-<div id="final">
-<hr>
-
-<p><h6>Criado por Larissa Castro Lussari Caires para o Programa Descodificadas
-</h6>
-
 </html>
